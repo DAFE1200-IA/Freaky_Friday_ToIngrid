@@ -1,0 +1,259 @@
+/* Responsive rules */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+
+@media only screen and (min-width: 768px) {
+/* For desktop: */ 
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+
+html{
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(255, 253, 240);
+    width: 100vw;
+    height: fit-content;   
+}
+
+/* Logo section */ 
+.logo {
+    background-color: rgb(208, 92, 29);
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 2rem;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    padding: 0.25rem;
+    letter-spacing: 0.25rem;
+    font-weight: 250;
+    font-size: 2rem;  
+}
+
+/* Nav-bar section */
+.navbar {
+    background-color: rgba(208, 92, 29, 0.445);
+    position: relative;
+    top: 2.5rem;
+    width: 100%; 
+    text-align: center;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    letter-spacing: 0.15rem;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar a:hover {
+    color: rgb(255, 253, 240);;
+  }
+
+/* Background picture */
+#banner {
+    position: relative;
+    top: 3rem;
+    background-image: url('ForsideBilde.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 35rem;
+    width: 100vw;
+}
+
+
+/* Welcome post section */
+.welcomePost {
+    border: dashed 1px black;
+    position: relative;
+    left: 33vw;
+    top: 5rem;
+    text-align: center;
+    margin: 1rem;
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    width: 34%;
+    font-size: 0.75rem;
+    letter-spacing: 0.05rem;
+    font-weight: 100;
+}
+
+/* Course Section */
+h2 {
+    position: relative;
+    top: 9.25rem;
+    left: 5rem;
+    margin-left: 5%;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: black;
+    left: 12vw;
+    width: 87%;
+}
+
+#post {
+    display: inline-flex;
+    position: relative;
+    top: 6rem;
+    left: 8vw;
+    width: 87%;
+    margin: 3% 7%;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    
+}
+
+#post .insidePost {
+    background-color: rgba(87, 43, 43, 0.055);
+    border: dashed 1px black;
+    position: relative;
+    margin: 30px;
+    width: 340px;
+    height: 470px;
+    letter-spacing: 1px;
+    overflow: hidden;  
+}
+
+#post .insidePost a {
+    display: inline-block;
+    background-color: rgb(37, 85, 58);
+    color: rgb(255, 253, 240);
+    width: 100%;
+    text-decoration: none;
+    padding: 20px 60px;
+    text-align: center;
+    margin: auto;
+    font-weight: 400;
+    font-size: 0.80rem;
+}
+
+#post .insidePost img {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    right: 46px;
+    height: 270px;
+    overflow: hidden; 
+    padding: 20px 40px;
+}
+
+#post .insidePost span {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    font-size: 0.60rem;
+    letter-spacing: 2px;
+    font-weight: 200;
+    padding: 0 0.3em;
+    color: black;
+}
+
+#post .insidePost p {
+    display: inline-block;
+    position: relative;
+    top: 31px;
+    padding: 0 0.3em;
+    width: 370px;
+    font-weight: 500;
+    font-size: 0.65rem;
+    color: black;
+}
+
+#post a:hover {
+    color: rgb(0, 0, 0);;
+  }
+
+  /* About page */ 
+  .about {
+    position: relative;
+    top: 3rem;
+    margin: 1rem 0.5rem;
+    font-size: 1rem;
+    color: black;
+  }
+
+  /* Contact page */
+  .contactForm {
+    position: relative;
+    top: 3rem;
+    margin: 1rem 0.5rem;
+    font-size: 1rem;
+    color: black;
+  }
+
+ /* Instruction videos page */
+ .videosSection {
+    position: relative;
+    top: 3rem;
+    margin: 1rem 0.5rem;
+    font-size: 1rem;
+    color: black;
+  }
+
+/* Footer */
+footer {
+    position: relative;
+    top: 180px;
+    border-top: 1px solid black;
+    width: 100vw;
+    text-align: center;
+    padding: 4rem 0; 
+    color: black;
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 2px;        
+}
+
+
